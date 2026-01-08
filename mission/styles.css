@@ -1,0 +1,90 @@
+:root{
+  --byu-blue: #1f5fa8;
+  --main-text: #111;
+  --line: #cfcfcf;
+  --frame: #bdbdbd;
+}
+
+body{
+  margin: 0;
+  background: #f2f2f2;
+  color: var(--main-text);
+  font-family: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+}
+
+.page{
+  width: 900px;
+  margin: 34px auto;
+  background: #fff;
+  padding: 34px;        
+  box-sizing: border-box;
+}
+
+
+.frame{
+  border: 1px solid var(--frame);
+  padding: 54px 86px 54px; 
+  box-sizing: border-box;
+}
+
+.title{
+  margin: 0;
+  text-align: center;
+  font-family: "Cinzel", serif;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  font-size: 38px;
+}
+
+.subtitle{
+  margin-top: 22px;
+  text-align: center;
+  font-family: "Cinzel", serif;
+  font-weight: 500;
+  color: var(--byu-blue);
+  letter-spacing: 0.24em;
+  font-size: 14px;
+}
+
+.line{
+  width: 80%;
+  height: 1px;
+  background: var(--line);
+  margin: 5px auto 0;
+}
+
+
+.main-text{
+  margin-top: 34px;
+  margin-left: 45px;
+  margin-right: 45px;
+  font-size: 18px;
+  line-height: 1.55;
+}
+
+.italics{
+  padding-top: 5px;
+  font-style: italic;
+}
+
+
+.mission-list{
+  margin: 18px 0 0;
+  padding-left: 34px;
+  line-height: 1.65;
+}
+
+.mission-list li{
+  margin: 18px 0;
+  padding-left: 10px;
+}
+
+
+.logo img {
+  width: 150px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  padding-top: 40px;
+
+}
