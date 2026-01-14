@@ -1,0 +1,42 @@
+Selector	Example	Example Description	Common Use
+.class	.intro	Selects all elements with class=”intro”	Style elements with a specific class, like headings or sections.
+.class1.class2	.name1.name2	Selects all elements with both name1 and name2 set within its class attribute	Apply combined styling to elements with multiple classes.
+.class1 .class2	.name1 .name2	Selects all elements with name2 that is a descendant of an element with name1	Style child elements within a specific parent container.
+#id	#firstname	Selects the element with id=”firstname”	Target a unique element for styling or scripting.
+*	*	Selects all elements	Apply global styles like resetting margins or padding.
+element	p	Selects all <p> elements	Style all instances of a specific HTML tag.
+element.class	p.intro	Selects all <p> elements with class=”intro”	Style specific elements within a class.
+element,element	div, p	Selects all <div> elements and all <p> elements	Apply the same styles to multiple elements.
+element element	div p	Selects all <p> elements inside <div> elements	Style nested elements.
+element>element	div > p	Selects all <p> elements where the parent is a <div> element	Style direct children of a parent element.
+element+element	div + p	Selects the first <p> element that is placed immediately after <div> elements	Style adjacent sibling elements.
+:hover	a:hover	Selects links on mouse over	Apply styles when a user hovers over an element.
+:focus	input:focus	Selects the input element which has focus	Highlight form fields when they are active.
+[attribute]	[target]	Selects all elements with a target attribute	Target elements with specific attributes for styling.
+:checked	input:checked	Selects every checked <input> element	Style selected checkboxes or radio buttons.
+:default	input:default	Selects the default <input> element	Style or highlight the default button or form element.
+:disabled	input:disabled	Selects every disabled <input> element	Apply styles to indicate fields that are non-interactive.
+:empty	p:empty	Selects every <p> element that has no children (including text nodes)	Hide or style placeholders for empty elements.
+:enabled	input:enabled	Selects every enabled <input> element	Apply styles to interactive form fields.
+:first-child	p:first-child	Selects every <p> element that is the first child of its parent	Highlight the first child of a container.
+:first-of-type	p:first-of-type	Selects every <p> element that is the first <p> element of its parent	Apply styles to the first instance of a specific type.
+:fullscreen	:fullscreen	Selects the element that is in full-screen mode	Adjust styles for elements in full-screen view.
+:has()	h2:has(+p)	Selects <h2> elements that are immediately followed by a <p> element, and applies the style to <h2>	Apply styles based on the presence of specific child elements.
+:in-range	input:in-range	Selects input elements with a value within a specified range	Style valid numeric inputs within acceptable ranges.
+:indeterminate	input:indeterminate	Selects input elements that are in an indeterminate state	Style checkboxes or progress bars with mixed states.
+:invalid	input:invalid	Selects all input elements with an invalid value	Highlight form fields with validation errors.
+:is()	:is(ul, ol)	Selects all <ul> and <ol> elements	Combine selectors to simplify complex queries.
+:lang()	p:lang(it)	Selects every <p> element with a lang attribute equal to “it” (Italian)	Style elements based on language settings.
+:last-child	p:last-child	Selects every <p> element that is the last child of its parent	Highlight the last child of a container.
+:last-of-type	p:last-of-type	Selects every <p> element that is the last <p> element of its parent	Style the last instance of a specific type.
+:link	a:link	Selects all unvisited links	Style hyperlinks that haven’t been visited yet.
+:not()	:not(p)	Selects every element that is not a <p> element	Exclude specific elements from styling.
+:nth-child()	p:nth-child(2)	Selects every <p> element that is the second child of its parent	Apply styles to elements in specific positions within their parent.
+:only-of-type	p:only-of-type	Selects every <p> element that is the only <p> element of its parent	Style unique elements within their container.
+:optional	input:optional	Selects input elements with no “required” attribute	Style optional form fields differently from required ones.
+:read-only	input:read-only	Selects input elements with the “readonly” attribute specified	Apply styles to fields that users cannot modify.
+:read-write	input:read-write	Selects input elements with the “readonly” attribute NOT specified	Style editable fields.
+:required	input:required	Selects input elements with the “required” attribute specified	Highlight mandatory form fields.
+:root	:root	Selects the document’s root element	Define global variables or styles for the document.
+:valid	input:valid	Selects all input elements with a valid value	Style form fields that pass validation.
+:visited	a:visited	Selects all visited links	Apply different styles to hyperlinks that the user has already clicked.
