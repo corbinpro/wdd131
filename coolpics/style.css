@@ -29,10 +29,10 @@ main {
 }
 
 section {
-    padding: 0px; /* zero because i dont like the border but to show that i can do the assignment with the desired format */
+    padding: 5px; 
     background-color: #e7e5e5;
     margin: 0;
-    border: 0px solid #ccc; /* zero because i dont like the border but to show that i can do the assignment with the desired format */
+    border: 1px solid #ccc; 
 }
 
 section a {
