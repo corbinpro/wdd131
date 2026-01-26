@@ -24,14 +24,22 @@ section {
     margin: 1em;
     border: 1px solid #ccc;
 }
+nav {
+    border: 1px solid gray;
+    max-width: fit-content;
+    margin: 1rem auto;
+}
 nav a {
     padding: 20px;
     color: black;
     display: block;
     text-align: center;
     text-decoration: none;
-    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
 
+nav a:last-child {
+    border-bottom: none;
 }
 
 .hide {
@@ -77,11 +85,17 @@ footer {
     .menu-btn {
         display: none;
     }
+    nav {
+        display: block !important;
+        text-align: right;
+        border: none;
+        max-width: 100%;
+        margin: 0;
+    }
     nav a {
         display: inline;
-    }
-    nav {
-        text-align: right;
+        border: none;
+        padding: 10px 15px;
     }
 }
 
