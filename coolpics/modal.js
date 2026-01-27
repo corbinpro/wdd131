@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         event.preventDefault();
+        event.stopPropagation();
 
         const img = trigger.tagName.toLowerCase() === 'img'
             ? trigger
@@ -38,6 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
     gallery.addEventListener('click', openViewer);
     closeButton?.addEventListener('click', closeViewer);
     viewer.addEventListener('click', (event) => {
+        event.stopPropagation();
         if (event.target === viewer) {
             closeViewer();
         }
