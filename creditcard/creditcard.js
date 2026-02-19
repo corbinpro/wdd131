@@ -12,7 +12,6 @@ function submitHandler(event) {
     event.preventDefault();
     let errorMsg = '';
     displayError('');
-    document.querySelector('#expirationError').textContent = '';
 
     const cardNumber = document.querySelector('#number');
     const cardNum = cardNumber.value.trim();

@@ -11,40 +11,40 @@
 <body>
     <main>
         <section class="errors"></section>
-        <div class="card-container">
-            <div class="card-front">
-                <div class="card-total">TOTAL: $199</div>
-                <div class="card-icon">💳</div>
-                
-                <div class="card-number-field">
-                    <label for="number">CARD NUMBER</label>
-                    <input type="text" id="number" name="cardNumber" placeholder="1234 5678 9101 1020" maxlength="16" required>
+        <form id="cardForm">
+            <div class="card-container">
+                <div class="card-front">
+                    <div class="card-total">TOTAL: $199</div>
+                    <div class="card-icon">💳</div>
+                    
+                    <div class="card-number-field">
+                        <label for="number">CARD NUMBER</label>
+                        <input type="text" id="number" name="cardNumber" placeholder="1234 5678 9101 1020" maxlength="16" required>
+                    </div>
+
+                    <div class="card-name-field">
+                        <label for="name">CARD HOLDER</label>
+                        <input type="text" id="name" name="cardName" placeholder="John Doe" required>
+                    </div>
+
+                    <div class="card-expiration-field">
+                        <label for="expirationDate">EXPIRATION</label>
+                        <input type="text" id="month" name="expMonth" placeholder="MM" maxlength="2" aria-labelledby="expirationDate" required>
+                        <input type="text" id="year" name="expYear" placeholder="YY" maxlength="2" aria-labelledby="expirationDate" required>
+                    </div>
                 </div>
 
-                <div class="card-name-field">
-                    <label for="name">CARD HOLDER</label>
-                    <input type="text" id="name" name="cardName" placeholder="John Doe" required>
+                <div class="card-back">
+                    <div class="card-stripe"></div>
+                    <div class="card-cvv-field">
+                        <label for="cvv">CVC/CVV</label>
+                        <input type="text" id="cvv" name="cvv" placeholder="xxx" maxlength="3" required>
+                    </div>
                 </div>
 
-                <div class="card-expiration-field">
-                    <label for="expirationDate">EXPIRATION</label>
-                    <input type="text" id="month" name="expMonth" placeholder="MM" maxlength="2" aria-labelledby="expirationDate" required>
-                    <input type="text" id="year" name="expYear" placeholder="YY" maxlength="2" aria-labelledby="expirationDate" required>
-                </div>
+                <button type="submit" tabindex="0">Submit</button>
             </div>
-
-            <div class="card-back">
-                <div class="card-stripe"></div>
-                <div class="card-cvv-field">
-                    <label for="cvv">CVC/CVV</label>
-                    <input type="text" id="cvv" name="cvv" placeholder="xxx" maxlength="3" required>
-                </div>
-            </div>
-
-            <form id="cardForm">
-                <button type="submit">Submit</button>
-            </form>
-        </div>
+        </form>
         <section id="message"></section>
     </main>
 </body>
