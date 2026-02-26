@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Invisible Forest Entity</title>
+    <meta name="description" content="Interactive character card for Invisible Forest Entity with level and health controls." />
+
+    <!-- Open Graph (Facebook, LinkedIn, etc.) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Invisible Forest Entity Character Card" />
+    <meta property="og:description" content="A JavaScript object character card with attack and level-up methods." />
+    <meta property="og:url" content="https://example.com/wdd131/charactercard/" />
+    <meta property="og:image" content="https://example.com/wdd131/charactercard/images/forest.jpg" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Invisible Forest Entity Character Card" />
+    <meta name="twitter:description" content="A JavaScript object character card with attack and level-up methods." />
+    <meta name="twitter:image" content="https://example.com/wdd131/charactercard/images/forest.jpg" />
+
+    <link rel="stylesheet" href="./charactercard.css" />
+    <script src="./charactercard.js" defer></script>
+  </head>
+  <body>
+    <main class="card" aria-live="polite">
+      <img class="image" src="./images/forest.jpg" alt="Invisible Forest Entity standing in a misty forest" />
+
+      <h1 class="name" id="characterName"></h1>
+
+      <section class="stats" aria-label="Character statistics">
+        <p><strong>Class:</strong> <span id="characterClass"></span></p>
+        <p><strong>Level:</strong> <span id="characterLevel"></span></p>
+        <p><strong>Health:</strong> <span id="characterHealth"></span></p>
+        <p id="statusMessage"></p>
+      </section>
+
+      <div class="buttons">
+        <button type="button" id="attackBtn">Attacked</button>
+        <button type="button" id="levelUpBtn">Level Up</button>
+      </div>
+    </main>
+  </body>
+</html>
