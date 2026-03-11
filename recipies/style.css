@@ -110,6 +110,12 @@ h2 {
 	gap: 0.75rem;
 }
 
+.recipe-list {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
 .recipe-image {
 	width: 100%;
 	height: auto;
@@ -150,6 +156,13 @@ h2 {
 	display: none;
 	margin: 0;
 	line-height: 1.35;
+}
+
+.no-results {
+	margin-top: 1rem;
+	padding: 1rem;
+	border: 2px dashed var(--border);
+	border-radius: 8px;
 }
 
 .site-footer {
